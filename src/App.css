@@ -1,30 +1,74 @@
 .buttons {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    box-sizing: border-box;
-    margin: 10px auto;
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  margin: 10px auto;
 }
 
 header {
-    width: 100%;
-    height: 560px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
 
-    img {
-        width: 40%;
-        margin: 40px
-    }
+  .first-figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+  }
+
+  .second-figure {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+  }
+
+  .third-figure {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    width: 55%;
+  }
+
+  /* .bg-figures {
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+ */
+  img {
+    width: 45%;
+    margin: 40px;
+    margin-top: 150px;
+  }
 }
 
 .sobre {
-    background-color:#EA0287;
-    width: 100%;
-    img {
-        width: 40%;
-    }
+  background-color: #ea0287;
+  width: 100%;
+  img {
+    width: 40%;
+  }
 }
