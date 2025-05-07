@@ -19,6 +19,7 @@ header {
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  user-select: none;
 
   .first-figure {
     position: absolute;
@@ -27,6 +28,7 @@ header {
     margin: 0;
     padding: 0;
     width: 30%;
+    z-index: -1;
   }
 
   .second-figure {
@@ -36,6 +38,7 @@ header {
     margin: 0;
     padding: 0;
     width: 20%;
+    z-index: -1;
   }
 
   .third-figure {
@@ -49,25 +52,18 @@ header {
     width: 55%;
   }
 
-  /* .bg-figures {
-    z-index: -1;
-    width: 100%;
-    height: 500px;
-    position: relative;
-    margin: 0;
-    padding: 0;
-  }
- */
   img {
     width: 45%;
     margin: 40px;
     margin-top: 150px;
+    z-index: -1;
   }
 }
 
 .sobre {
   background-color: #ea0287;
   width: 100%;
+
   img {
     width: 40%;
   }

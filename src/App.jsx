@@ -1,9 +1,13 @@
 import { useRef } from "react";
-import "./App.css";
-import FuzueLogo from "./assets/fuzue-logo.png";
+// Components
 import Button from "./components/Buttons";
 import SobreSection from "./components/Sobre";
 import EixosSection from "./components/EixosSection";
+import ContatosSection from "./components/ContatosSection";
+// Styles
+import "./App.css";
+// Imagens
+import FuzueLogo from "./assets/fuzue-logo.png";
 import FirstFigure from "./assets/ê.png";
 import SecondFigure from "./assets/Star.png";
 import ThirdFigure from "./assets/u.png";
@@ -11,6 +15,7 @@ import ThirdFigure from "./assets/u.png";
 function App() {
   const aboutSection = useRef(null);
   const eixosSection = useRef(null);
+  const contatosSection = useRef(null);
 
   return (
     <div>
@@ -35,7 +40,7 @@ function App() {
           <Button text="EIXOS" sectionTarget={eixosSection} bgcolor="#015CFF" />
           <Button
             text="CONTATOS"
-            sectionTarget={aboutSection}
+            sectionTarget={contatosSection}
             bgcolor="#F2B705"
           />
         </div>
@@ -46,6 +51,9 @@ function App() {
         </section>
         <section ref={eixosSection} className="eixos">
           <EixosSection />
+        </section>
+        <section ref={contatosSection} className="contatos">
+          <ContatosSection />
         </section>
       </div>
     </div>
