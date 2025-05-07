@@ -1,0 +1,53 @@
+.eixos-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    background-color: #015CFF;
+
+    .title-container {
+        height: 10%;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+
+        img {
+            position: absolute;
+            z-index: 0;
+            width: 120px;
+            bottom: -20px;
+            left: -60px;
+        }
+
+        .title {
+            z-index: 1;
+            background-color: #FF6127;
+            display: flex;
+            padding: 20px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            
+            h1 {
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        width: 90%;
+    }
+
+    .swiper-wrapper {
+        flex: 1;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+}

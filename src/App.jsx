@@ -3,15 +3,17 @@ import "./App.css";
 import FuzueLogo from "./assets/fuzue-logo.png";
 import Button from "./components/Buttons";
 import SobreSection from "./components/Sobre";
+import EixosSection from "./components/EixosSection";
 import FirstFigure from "./assets/ê.png";
 import SecondFigure from "./assets/Star.png";
 import ThirdFigure from "./assets/u.png";
 
 function App() {
   const aboutSection = useRef(null);
+  const eixosSection = useRef(null);
 
   return (
-    <>
+    <div>
       <header>
         {/* Background figures */}
         {/* <div className="bg-figures">
@@ -30,7 +32,7 @@ function App() {
             sectionTarget={aboutSection}
             bgcolor="#EA0287"
           />
-          <Button text="AÇÕES" sectionTarget={aboutSection} bgcolor="#015CFF" />
+          <Button text="EIXOS" sectionTarget={eixosSection} bgcolor="#015CFF" />
           <Button
             text="CONTATOS"
             sectionTarget={aboutSection}
@@ -42,8 +44,11 @@ function App() {
         <section ref={aboutSection} className="sobre">
           <SobreSection />
         </section>
+        <section ref={eixosSection} className="eixos">
+          <EixosSection />
+        </section>
       </div>
-    </>
+    </div>
   );
 }
 
