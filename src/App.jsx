@@ -11,6 +11,7 @@ import FuzueLogo from "./assets/fuzue-logo.png";
 import FirstFigure from "./assets/ê.png";
 import SecondFigure from "./assets/Star.png";
 import ThirdFigure from "./assets/u.png";
+import ProjetoAtual from "./components/ProjetoAtual/ProjetoAtual";
 
 function App() {
   const aboutSection = useRef(null);
@@ -51,6 +52,7 @@ function App() {
         </section>
         <section ref={eixosSection} className="eixos">
           <EixosSection />
+          <ProjetoAtual />
         </section>
         <section ref={contatosSection} className="contatos">
           <ContatosSection />

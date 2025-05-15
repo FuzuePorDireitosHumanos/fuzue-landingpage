@@ -68,3 +68,31 @@ header {
     width: 40%;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+ .buttons {
+  flex-direction: column;
+  width: 70%;
+  gap: 20px;
+ } 
+
+ header {
+  .first-figure {
+    width: 50%;
+  }  
+
+  .second-figure {
+    width: 50%;
+  }
+
+  .third-figure {
+    width: 100%;
+    left: -100px;
+  }
+
+  img {
+    width: 80%;
+    margin-top: 40px;
+  }
+ }
+}

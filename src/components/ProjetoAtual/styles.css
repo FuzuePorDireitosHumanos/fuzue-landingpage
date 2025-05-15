@@ -1,0 +1,61 @@
+.projeto-atual-container {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fd3d00;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+  .sides {
+    width: 3%;
+  }
+
+  .main-content {
+    width: 90%;
+    display: flex;
+    flex: 1;
+
+    img {
+      width: 100%;
+      padding: 5%;
+      box-sizing: border-box;
+    }
+
+    .texto-sobre {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        text-wrap: break-word;
+        text-align: justify;
+        font-size: 20px;
+        width: 95%; 
+        font-weight: bold;
+      }
+
+      .insta-link-cd {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 1%;
+
+        img {
+          width: 7%;
+          padding: 0;
+          filter: invert(1);
+        }
+
+        a {
+          text-decoration: underline;
+          margin: 0;
+          color: #fff;
+          font-family: "Barlow", sans-serif;
+          font-size: 25px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

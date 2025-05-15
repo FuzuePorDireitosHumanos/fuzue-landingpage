@@ -89,6 +89,14 @@ const EixosSection = () => {
           </SwiperSlide>
         </Swiper>
       </div>
+      <div className="buttons-move-mobile">
+        <div className="button-prev-mob">
+          <img src={ArrowPrev} />
+        </div>
+        <div className="button-next-mob">
+          <img src={ArrowNext} />
+        </div>
+      </div>
     </div>
   );
 };
