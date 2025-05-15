@@ -1,7 +1,6 @@
 .contatos-container {
   position: relative;
   display: flex;
-
   overflow: hidden;
   flex-direction: column;
   width: 100%;
@@ -15,6 +14,7 @@
     bottom: -20px;
     right: 0;
     width: 30%;
+    user-select: none;
   }
 
   .second-figure-contatos {
@@ -24,6 +24,7 @@
     top: 0;
     right: 20%;
     width: 30%;
+    user-select: none;
   }
 
   .third-figure-contatos {
@@ -32,6 +33,7 @@
     bottom: 0;
     width: 50%;
     margin: 0;
+    user-select: none;
   }
 
   .contatos {
@@ -61,45 +63,104 @@
     }
 
     .email {
-        width: 80%;
-        border: 3px solid #000;
-        border-radius: 40px;
-        padding: 5px;
-        display: flex;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
+      width: 80%;
+      border: 3px solid #000;
+      border-radius: 40px;
+      padding: 5px;
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
 
-        h1 {
-            font-size: 27px;
-            margin: 0;
-            color: #1E3BF6;
-        }
+      h1 {
+        font-size: 27px;
+        margin: 0;
+        color: #1e3bf6;
+      }
     }
 
     .insta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      width: 100%;
+      gap: 5px;
+
+      img {
+        width: 40px;
+      }
+
+      h2 {
+        font-size: 30px;
+        margin: 0;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .contatos-container {
+    .first-figure-contatos {
+      width: 55%;
+    }
+
+    .second-figure-contatos {
+      width: 100%;
+      right: -100px;
+    }
+
+    .third-figure-contatos {
+      width: 130%;
+      left: -250px;
+    }
+    
+    .contatos {
+      box-sizing: border-box;
+      margin: 100px auto;
+      padding: 25px 15px 25px 15px;
+      border-radius: 50px;
+
+      h1 {
+        font-size: 30px;
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: 18px;
+        padding: 0;
+        margin: 10px 0;
+      }
+
+      .email {
+        width: 95%;
+        height: 40px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-        width: 100%;
-        gap: 5px;
-
-        img {
-            width: 40px;
+        margin: 10px;
+        box-sizing: border-box;
+        
+        h1 {
+          font-size: 70%;
+          text-align: center;
         }
+      }
 
+      .insta {
         h2 {
-            font-size: 30px;
-            margin: 0;
-            text-align: center;
-
-            a {
-                text-decoration: none;
-                color: #000;
-            }
+          font-size: 17px;
         }
+        
+        img {
+          width: 8%;
+        }
+      }
     }
   }
 }

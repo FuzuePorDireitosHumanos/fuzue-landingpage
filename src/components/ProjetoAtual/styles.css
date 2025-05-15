@@ -59,3 +59,41 @@
     }
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .projeto-atual-container {
+    .sides {
+      width: 12%;
+      padding-top: 10px;
+      /* padding-bottom: 20px; */
+    }
+
+    .main-content {
+      flex-direction: column;
+
+      img {
+        padding: 0 10px;
+      }
+
+      .texto-sobre {
+        width: 95%;
+        align-items: center;
+        margin: 0 auto;
+
+        .insta-link-cd {
+          width: 100%;
+          margin-bottom: 30px;
+
+          img {
+            width: 10%;
+          }
+
+          a {
+            width: 100%;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

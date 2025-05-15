@@ -145,18 +145,19 @@
 
     .swiper-wrapper {
       z-index: 1;
-
+      
       .buttons-move {
         display: none;
-
+        
         img {
           display: none;
         }
       }
     }
-
+    
     .buttons-move-mobile {
       display: flex;
+      box-sizing: border-box;
       justify-content: space-between;
       align-items: center;
       width: 100%;
