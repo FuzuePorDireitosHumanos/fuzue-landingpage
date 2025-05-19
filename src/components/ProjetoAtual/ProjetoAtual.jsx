@@ -9,7 +9,7 @@ import "./styles.css";
 const ProjetoAtual = () => {
   return (
     <div className="projeto-atual-container">
-      <img src={CdSides} className="sides" />
+      <img src={CdSides} className="sides" alt="img-e" />
       <div className="main-content">
         <img src={LogoProjeto} alt="logo-projeto" />
         <div className="texto-sobre">
@@ -23,12 +23,12 @@ const ProjetoAtual = () => {
             inclusiva e repleta de vida.
           </p>
           <div className="insta-link-cd">
-            <img src={InstagramIcon} />
+            <img src={InstagramIcon} alt="icon-insta" />
             <a href="https://www.instagram.com/fuzuepordireitoshumanos/">Acompanhe no instagram!</a>
           </div>
         </div>
       </div>
-      <img src={CdSides} className="sides" />
+      <img src={CdSides} className="sides" alt="img-d" />
     </div>
   );
 };

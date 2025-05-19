@@ -25,11 +25,11 @@ function App() {
         {/* <div className="bg-figures">
        </div> */}
         {/* Figura topo esquerda */}
-        <img src={FirstFigure} className="first-figure" />
+        <img src={FirstFigure} className="first-figure" alt="figura-e" />
         {/* Figura topo direita */}
-        <img src={SecondFigure} className="second-figure" />
+        <img src={SecondFigure} className="second-figure" alt="figura-estrela" />
         {/* Figura baixo direita */}
-        <img src={ThirdFigure} className="third-figure" />
+        <img src={ThirdFigure} className="third-figure" alt="figura-u" />
 
         <img src={FuzueLogo} alt="logo-fuzue" />
         <div className="buttons">

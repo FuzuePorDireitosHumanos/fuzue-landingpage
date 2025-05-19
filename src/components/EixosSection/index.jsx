@@ -30,7 +30,7 @@ const EixosSection = () => {
   return (
     <div className="eixos-container">
       <div className="title-container">
-        <img src={MiniStar} />
+        <img src={MiniStar} alt="mini-estrela" />
         <div className="title">
           <h1>EIXOS</h1>
         </div>
@@ -51,12 +51,12 @@ const EixosSection = () => {
 
           {/* Botao slide anterior */}
           <div className="button-prev" onClick={prevSlide}>
-            <img src={ArrowPrev} />
+            <img src={ArrowPrev} alt="seta-voltar" />
           </div>
 
           {/* Botão proximo slide */}
           <div className="button-next" onClick={nextSlide}>
-            <img src={ArrowNext} />
+            <img src={ArrowNext} alt="seta-proximo" />
           </div>
         </div>
         <Swiper
@@ -101,10 +101,10 @@ const EixosSection = () => {
       </div>
       <div className="buttons-move-mobile">
         <div className="button-prev-mob" onClick={prevSlide}>
-          <img src={ArrowPrev} />
+          <img src={ArrowPrev} alt="seta-voltar" />
         </div>
         <div className="button-next-mob" onClick={nextSlide}>
-          <img src={ArrowNext} />
+          <img src={ArrowNext} alt="seta-proximo" />
         </div>
       </div>
     </div>
