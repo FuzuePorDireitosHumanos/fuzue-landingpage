@@ -33,10 +33,19 @@ h1 {
 }
 
 p {
-  font-size: 27px;
+  /* font-size: 21px; */
+  font-size: 135%;
   color: #fff;
 }
 
 span {
   font-family: "Barlow", sans-serif;
+}
+
+body, html, #root {
+  overflow-x: hidden;
+}
+
+img {
+  user-select: none;
 }

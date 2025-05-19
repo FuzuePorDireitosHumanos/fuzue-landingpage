@@ -15,6 +15,7 @@
     right: 0;
     width: 30%;
     user-select: none;
+    overflow: hidden;
   }
 
   .second-figure-contatos {
@@ -54,6 +55,7 @@
       margin: 0;
       width: 100%;
       margin: 40px;
+      margin-top: 10px;
     }
 
     h1 {
@@ -87,24 +89,53 @@
       padding: 5px;
       width: 100%;
       gap: 5px;
-
+      
       img {
         width: 40px;
       }
-
+      
       h2 {
         font-size: 30px;
         margin: 0;
         text-align: center;
-
+        
         a {
+          transition: ease-in-out 800ms;
           text-decoration: none;
           color: #000;
         }
       }
     }
+
+    .insta:hover {
+      a {
+        text-decoration: underline;
+      }
+    }
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .contatos-container {
+    .contatos {
+      p {
+        font-size: 29px;
+      }
+
+      .email {
+        h1 {
+          font-size: 40px;
+        }
+      }
+
+      .insta {
+        h2 {
+          font-size: 38px;
+        }
+      }
+    }
+  }
+} 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .contatos-container {

@@ -27,13 +27,14 @@
       z-index: 1;
       background-color: #ff6127;
       display: flex;
-      padding: 20px;
+      padding: 10px;
       height: 40px;
       justify-content: center;
       align-items: center;
       user-select: none;
 
       h1 {
+        font-size: 35px;
         color: #fff;
         text-align: center;
       }
@@ -41,8 +42,10 @@
   }
 
   p {
+    font-size: 23px;
     text-align: center;
     width: 90%;
+    margin-top: 5px;
   }
 
   .swiper-wrapper {
@@ -98,7 +101,7 @@
         display: flex;
         align-items: center;
         justify-content: start;
-        opacity: 0.3;
+        opacity: 0.1;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         user-select: none;
@@ -112,6 +115,14 @@
   }
   .buttons-move-mobile {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .eixos-container {
+    p {
+      font-size: 30px;
+    }
   }
 }
 

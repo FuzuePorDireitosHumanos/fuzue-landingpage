@@ -60,6 +60,24 @@
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .projeto-atual-container {
+    .main-content {
+      .texto-sobre {
+        p {
+          font-size: 29px;
+        }
+
+        .insta-link-cd {
+          a {
+            font-size: 29px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .projeto-atual-container {
     .sides {
