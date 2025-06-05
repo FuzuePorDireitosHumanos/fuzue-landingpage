@@ -52,34 +52,11 @@ const EixosSection = () => {
           speed={1000}
           modules={[Autoplay]}
         >
-          <SwiperSlide>
-            <Slide
-              text="O Fuzuê é a sinergia das juventudes pernambucanas reunidas em um
-            coletivo que através da educação, política, arte e cultura, objetiva
-            defender e promover os direitos humanos e a justiça social para
-            grupos historicamente vulnerabilizados, tecendo uma rede de apoio e
-            oportunidades, nesse sistema que nos explora e silencia. Nossa
-            abordagem, nascida de uma inquietação, é a de um fuzuê: dinâmica,
-            inclusiva e repleta de vida."
-              title="Justiça Climática"
-              image={EixoImagem}
-            />
-          </SwiperSlide>
-
-          {/* Slide 2 */}
-          <SwiperSlide>
-            <Slide
-              text="O Fuzuê é a sinergia das juventudes pernambucanas reunidas em um
-            coletivo que através da educação, política, arte e cultura, objetiva
-            defender e promover os direitos humanos e a justiça social para
-            grupos historicamente vulnerabilizados, tecendo uma rede de apoio e
-            oportunidades, nesse sistema que nos explora e silencia. Nossa
-            abordagem, nascida de uma inquietação, é a de um fuzuê: dinâmica,
-            inclusiva e repleta de vida."
-              title="Justiça climática"
-              image={EixoImagem}
-            />
-          </SwiperSlide>
+          {texts.map((item, index) => (
+            <SwiperSlide key={index}>
+              <Slide text={item.text} title={item.title} image={EixoImagem} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
       <div className="buttons-move-mobile">
