@@ -1,6 +1,5 @@
-import React from "react";
 import FotoFuzue from "../../assets/fuzue-foto.png";
-import { sobre } from "../../constants";
+import { textoPrincipal } from "../../constants";
 import "./styles.css";
 
 const SobreSection = () => {
@@ -12,8 +11,8 @@ const SobreSection = () => {
       </div>
       <div className="sobre">
         <h1>QUEM SOMOS</h1>
-        <p>{sobre[0]}</p>
-        <p>{sobre[1]}</p>
+        <p>{textoPrincipal[0]}</p>
+        <p>{textoPrincipal[1]}</p>
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ export const texts = [
 export const eixosText =
   "O Fuzuê compreende as juventudes como força motora da mudança e entende que a união das múltiplas lutas em torno dos direitos humanos é fundamental para a transformação da sociedade. Nessa lógica, para organizar nossas atuações, separamos eixos que orientam não apenas as práticas de nossas ações, mas também os princípios em torno dos quais nos articulamos. Assim, definimos a Arte e Cultura, a Justiça Climática, o Direito à Cidade e o Enfrentamento à Violência como eixos norteadores de nossas atividades.";
 
-export const sobre = [
+export const textoPrincipal = [
   "O Fuzuê é a sinergia das juventudes pernambucanas reunidas em um coletivo que através da educação, política, arte e cultura, objetiva defender e promover os direitos humanos e a justiça social para grupos historicamente vulnerabilizados, tecendo uma rede de apoio e oportunidades, nesse sistema que nos explora e silencia.",
   "Nossa abordagem, nascida de uma inquietação, é a de um fuzuê: dinâmica, inclusiva e repleta de vida. Somos um caldeirão de ideias e ações que fervilham com o propósito de criar um ambiente de luta por mudança social. O Fuzuê não é apenas um nome, é a manifestação de nosso compromisso em fazer a diferença, celebrando a diversidade e o potencial de nossos territórios para construir um futuro mais justo.",
 ];

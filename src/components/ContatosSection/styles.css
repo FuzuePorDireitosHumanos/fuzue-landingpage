@@ -67,7 +67,7 @@
     .email {
       width: 80%;
       border: 3px solid #000;
-      border-radius: 40px;
+      border-radius: 140px;
       padding: 5px;
       display: flex;
       margin: 0 auto;
@@ -89,16 +89,16 @@
       padding: 5px;
       width: 100%;
       gap: 5px;
-      
+
       img {
         width: 40px;
       }
-      
+
       h2 {
         font-size: 30px;
         margin: 0;
         text-align: center;
-        
+
         a {
           transition: ease-in-out 800ms;
           text-decoration: none;
@@ -123,6 +123,8 @@
       }
 
       .email {
+        border: 5px solid #000;
+
         h1 {
           font-size: 40px;
         }
@@ -135,7 +137,7 @@
       }
     }
   }
-} 
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .contatos-container {
@@ -152,7 +154,7 @@
       width: 130%;
       left: -250px;
     }
-    
+
     .contatos {
       box-sizing: border-box;
       margin: 100px auto;
@@ -176,7 +178,7 @@
         display: flex;
         margin: 10px;
         box-sizing: border-box;
-        
+
         h1 {
           font-size: 70%;
           text-align: center;
@@ -187,7 +189,7 @@
         h2 {
           font-size: 17px;
         }
-        
+
         img {
           width: 8%;
         }
