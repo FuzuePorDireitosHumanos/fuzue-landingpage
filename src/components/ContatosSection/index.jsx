@@ -17,8 +17,8 @@ const ContatosSection = () => {
       <img src={ThirdFigure} className="third-figure-contatos" alt="figura-u" />
       <div className="contatos">
         <h1>CONTATOS</h1>
-        <p>{contatos.primeiraParte}</p>
-        <p>{contatos.segundaParte}</p>
+        <p>{contatos[0]}</p>
+        <p>{contatos[1]}</p>
         <div className="email">
           <h1>fuzuepordireitoshumanos@gmail.com</h1>
         </div>

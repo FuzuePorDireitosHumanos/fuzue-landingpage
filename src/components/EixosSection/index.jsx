@@ -7,7 +7,7 @@ import EixoImagem from "../../assets/eixo-image.png";
 import MiniStar from "../../assets/mini-star.png";
 import ArrowNext from "../../assets/arrow_next.png";
 import ArrowPrev from "../../assets/arrow_back.png";
-import { eixosText, texts } from "../../constants";
+import { eixos, eixosText } from "../../constants";
 
 const EixosSection = () => {
   const swiperRef = useRef(null);
@@ -52,9 +52,9 @@ const EixosSection = () => {
           speed={1000}
           modules={[Autoplay]}
         >
-          {texts.map((item, index) => (
+          {eixos.map((item, index) => (
             <SwiperSlide key={index}>
-              <Slide text={item.text} title={item.title} image={EixoImagem} />
+              <Slide text={item.text} title={item.title} image={item.img || EixoImagem} />
             </SwiperSlide>
           ))}
         </Swiper>
