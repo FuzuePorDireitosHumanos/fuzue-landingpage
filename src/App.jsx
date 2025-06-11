@@ -21,14 +21,8 @@ function App() {
   return (
     <div>
       <header>
-        {/* Background figures */}
-        {/* <div className="bg-figures">
-       </div> */}
-        {/* Figura topo esquerda */}
         <img src={FirstFigure} className="first-figure" alt="figura-e" />
-        {/* Figura topo direita */}
         <img src={SecondFigure} className="second-figure" alt="figura-estrela" />
-        {/* Figura baixo direita */}
         <img src={ThirdFigure} className="third-figure" alt="figura-u" />
 
         <img src={FuzueLogo} alt="logo-fuzue" />
