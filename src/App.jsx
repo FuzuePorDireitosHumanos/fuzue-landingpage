@@ -1,12 +1,9 @@
 import { useRef } from "react";
-// Components
 import Button from "./components/Buttons";
 import SobreSection from "./components/Sobre";
 import EixosSection from "./components/EixosSection";
 import ContatosSection from "./components/ContatosSection";
-// Styles
 import "./App.css";
-// Imagens
 import FuzueLogo from "./assets/fuzue-logo.png";
 import FirstFigure from "./assets/ê.png";
 import SecondFigure from "./assets/Star.png";
