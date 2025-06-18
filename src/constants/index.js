@@ -1,5 +1,6 @@
 import JusticaClimatica from "../assets/eixo-justica.png";
-import ArteCultura from "../assets/eixo-image.png";
+import ArteCultura from "../assets/arte-cultura.png";
+import DireitoCidade from "../assets/direito-cidade.png"
 import Violencia from "../assets/eixo-violencia.png";
 
 export const eixos = [
@@ -16,6 +17,7 @@ export const eixos = [
   {
     title: "Direito à Cidade",
     text: "O direito à cidade vai além do acesso à moradia ou ao transporte: é o direito de participar ativamente da construção dos espaços urbanos e da vida coletiva. Projetos de reestruturação, guiados por interesses financeiros e lógicas tecnocráticas, excluem comunidades e aprofundam desigualdades. A cidade, cada vez mais moldada pelos desejos de uma elite econômica, precisa ser retomada como espaço democrático. Lutar pelo direito à cidade é articular demandas fragmentadas — moradia, mobilidade, lazer em uma reivindicação coletiva por cidadania, autonomia e justiça urbana.",
+    img: DireitoCidade,
   },
   {
     title: "Enfrentamento à Violencia",
