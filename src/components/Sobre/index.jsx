@@ -12,7 +12,6 @@ const SobreSection = () => {
       <div className="sobre">
         <h1>QUEM SOMOS</h1>
         <p>{quemSomos}</p>
-        {/* <p>{textoPrincipal[1]}</p> */}
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import CdSides from "../../assets/cd-sides.png";
 import LogoProjeto from "../../assets/logo-cd.png";
-import InstagramIcon from "../../assets/instagram-icon.png";
 import "./styles.css";
 import { textoPrincipal } from "../../constants";
 

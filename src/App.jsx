@@ -1,12 +1,9 @@
 import { useRef } from "react";
-// Components
 import Button from "./components/Buttons";
 import SobreSection from "./components/Sobre";
 import EixosSection from "./components/EixosSection";
 import ContatosSection from "./components/ContatosSection";
-// Styles
 import "./App.css";
-// Imagens
 import FuzueLogo from "./assets/fuzue-logo.png";
 import FirstFigure from "./assets/ê.png";
 import SecondFigure from "./assets/Star.png";
@@ -21,14 +18,8 @@ function App() {
   return (
     <div>
       <header>
-        {/* Background figures */}
-        {/* <div className="bg-figures">
-       </div> */}
-        {/* Figura topo esquerda */}
         <img src={FirstFigure} className="first-figure" alt="figura-e" />
-        {/* Figura topo direita */}
         <img src={SecondFigure} className="second-figure" alt="figura-estrela" />
-        {/* Figura baixo direita */}
         <img src={ThirdFigure} className="third-figure" alt="figura-u" />
 
         <img src={FuzueLogo} alt="logo-fuzue" />
