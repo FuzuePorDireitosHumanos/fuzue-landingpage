@@ -3,7 +3,7 @@ import FirstFigure from "../../assets/ê-contatos.png";
 import SecondFigure from "../../assets/star-contatos.png";
 import ThirdFigure from "../../assets/u-contatos.png";
 import InstaIcon from "../../assets/instagram-icon.png";
-import { textoPrincipal } from "../../constants";
+import { contatos } from "../../constants";
 
 const ContatosSection = () => {
   return (
@@ -17,7 +17,8 @@ const ContatosSection = () => {
       <img src={ThirdFigure} className="third-figure-contatos" alt="figura-u" />
       <div className="contatos">
         <h1>CONTATOS</h1>
-        <p>{textoPrincipal[0]}</p>
+        <p>{contatos[0]}</p>
+        <p>{contatos[1]}</p>
         <div className="email">
           <h1>fuzuepordireitoshumanos@gmail.com</h1>
         </div>

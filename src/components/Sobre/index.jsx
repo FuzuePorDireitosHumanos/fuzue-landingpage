@@ -1,5 +1,5 @@
 import FotoFuzue from "../../assets/fuzue-foto.png";
-import { textoPrincipal } from "../../constants";
+import { quemSomos } from "../../constants";
 import "./styles.css";
 
 const SobreSection = () => {
@@ -11,8 +11,8 @@ const SobreSection = () => {
       </div>
       <div className="sobre">
         <h1>QUEM SOMOS</h1>
-        <p>{textoPrincipal[0]}</p>
-        <p>{textoPrincipal[1]}</p>
+        <p>{quemSomos}</p>
+        {/* <p>{textoPrincipal[1]}</p> */}
       </div>
     </div>
   );
