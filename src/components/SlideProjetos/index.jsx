@@ -13,7 +13,7 @@ const SlideProjetos = () => {
         slidesPerView={1}
         autoplay={{ delay: 10500, disableOnInteraction: false }}
         loop={true}
-        speed={1000}
+        speed={1500}
         modules={[Autoplay]}
       >
         <SwiperSlide>
