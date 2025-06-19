@@ -1,0 +1,33 @@
+import React from "react";
+import "./styles.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import CarnavalDemocracia from "./CarnavalDemocracia";
+import RaizesCaatinga from "./RaizesCaatinga";
+import TorneiraCheia from "./TorneiraCheia";
+
+const SlideProjetos = () => {
+  return (
+    <div className="slide-projetos-container">
+      <Swiper
+        slidesPerView={1}
+        autoplay={{ delay: 10500, disableOnInteraction: false }}
+        loop={true}
+        speed={1000}
+        modules={[Autoplay]}
+      >
+        <SwiperSlide>
+            <CarnavalDemocracia />
+        </SwiperSlide>
+        <SwiperSlide>
+            <RaizesCaatinga />
+        </SwiperSlide>
+        <SwiperSlide>
+            <TorneiraCheia />
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
+};
+
+export default SlideProjetos;
