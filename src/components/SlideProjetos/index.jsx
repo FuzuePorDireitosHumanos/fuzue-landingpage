@@ -11,7 +11,7 @@ const SlideProjetos = () => {
     <div className="slide-projetos-container">
       <Swiper
         slidesPerView={1}
-        autoplay={{ delay: 10500, disableOnInteraction: false }}
+        autoplay={{ delay: 12000, disableOnInteraction: false }}
         loop={true}
         speed={1500}
         modules={[Autoplay]}
