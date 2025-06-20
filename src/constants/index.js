@@ -1,6 +1,6 @@
 import JusticaClimatica from "../assets/eixo-justica.png";
 import ArteCultura from "../assets/arte-cultura.png";
-import DireitoCidade from "../assets/direito-cidade.png"
+import DireitoCidade from "../assets/direito-cidade.png";
 import Violencia from "../assets/eixo-violencia.png";
 
 export const eixos = [
@@ -40,4 +40,10 @@ export const quemSomos =
 export const contatos = [
   "O Instituto Fuzuê está de portas e corações abertos para trocar ideias, ouvir propostas, fortalecer parcerias e caminhar junto com quem acredita na força das Juventudes.",
   "Entre em contato conosco e aproveite para conhecer de perto nossa atuação, lutas e conquistas no Instagram",
+];
+
+export const projetosTxt = [
+  "O projeto “Raizes da Caatinga”, apoiado pelo Fuzuê, é uma rede de Comunidades Tradicionais da Caatinga da cidade de Taquaritinga do Norte-PE. Em defesa dos Direitos Humanos, justiça climática e proteção dos modos de vidas tradicionais dessas comunidades. Onde participamos do desenvolvimento do primeiro protocolo de consulta do estado de pernambuc, construido pela rede.",
+  `Foi olhando para o passado e o presente de Olinda e sonhando com um futuro mais justo e digno para todos que nasceu o projeto "De Torneira Cheia: Articulação Olindense pelo Direito ao Saneamento Básico". Criado em parceria com o Coletivo Mulheres Periféricas e LGBT+, o GCASC e com o apoio da Habitar Brasil, este projeto surge para fortalecer as vozes das periferias de Olinda, que seguem resistindo frente à negação do acesso ao saneamento básico — um direito essencial, sistematicamente violado.`,
+  `O projeto "Carnaval é Democracia: agenda 2030, juventudes e o Carnaval nas ladeiras de Olinda", idealizado pelo Fuzuê, e apoiado pela Gestos, GT Agenda 2030 e União Euroepia, nasce como um frevo-manifesto, um chamado à mobilização e ao pensamento coletivo sobre como garantir trabalho digno, cultura de paz e a preservação do Patrimônio Cultural no núcleo vital da festa mais democrática do Brasil. Porque se o Carnaval é reflexo de pluralidade, alegria e identidade, ele também precisa ser inclusivo, humanizado e justo.`,
 ];

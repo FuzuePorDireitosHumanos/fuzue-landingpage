@@ -26,10 +26,10 @@ const ContatosSection = () => {
           <img src={InstaIcon} alt="icon-insta" />
           <h2>
             <a
-              href="https://www.instagram.com/fuzuepordireitoshumanos/"
+              href="https://www.instagram.com/institutofuzue/"
               target="_blank"
             >
-              @fuzuepordireitoshumanos
+              @institutofuzue
             </a>
           </h2>
         </div>
