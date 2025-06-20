@@ -151,7 +151,7 @@
 
   .main-content {
     img {
-      width: 25%;
+      width: 22%;
       margin-right: 10%;
     }
 
@@ -163,6 +163,12 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .slide-projetos-container {
+    .buttons-move {
+      display: none;
+    }
+  }
+
   .projetos-container {
     .main-content {
       flex-direction: column;

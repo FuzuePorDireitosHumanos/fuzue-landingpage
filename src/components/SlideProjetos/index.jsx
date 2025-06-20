@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import "./styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -52,6 +52,14 @@ const SlideProjetos = () => {
           <TorneiraCheia />
         </SwiperSlide>
       </Swiper>
+      <div className="buttons-move-mobile">
+        <div className="button-prev-mob" onClick={prevSlide}>
+          <img src={ArrowPrev} alt="seta-voltar" />
+        </div>
+        <div className="button-next-mob" onClick={nextSlide}>
+          <img src={ArrowNext} alt="seta-proximo" />
+        </div>
+      </div>
     </div>
   );
 };
