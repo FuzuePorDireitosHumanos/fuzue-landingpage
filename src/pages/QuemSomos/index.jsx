@@ -2,19 +2,19 @@ import Logo from "../../assets/fuzue-logo.png";
 import FormaArco from "../../assets/ê.png";
 import FormaEstrela from "../../assets/Star.png";
 import FormaAzul from "../../assets/u.png";
-import FotoFuzue from "../../assets/fuzue-foto.png";
+import FotoFuzue from "../../assets/foto_grupo_quem_somos.jpeg";
 import "./styles.css";
 
 const valores = [
   { nome: "Colaboração e Engajamento", cor: "var(--rosa)" },
   { nome: "Democracia", cor: "var(--amarelo)" },
-  { nome: "Diversidade e Inclusão", cor: "var(--azul)" },
+  { nome: "Diversidade e Inclusão", cor: "var(--laranja)" },
   { nome: "Horizontalidade", cor: "var(--verde)" },
-  { nome: "Inovação e Melhoria Contínua", cor: "var(--laranja)" },
-  { nome: "Protagonismo das Juventudes", cor: "var(--rosa)" },
-  { nome: "Sustentabilidade", cor: "var(--verde)" },
-  { nome: "Transparência e Rigor", cor: "var(--azul)" },
-  { nome: "União e Respeito", cor: "var(--amarelo)" },
+  { nome: "Inovação e Melhoria Contínua", cor: "var(--rosa)" },
+  { nome: "Protagonismo das Juventudes", cor: "var(--amarelo)" },
+  { nome: "Sustentabilidade", cor: "var(--laranja)" },
+  { nome: "Transparência e Rigor", cor: "var(--verde)" },
+  { nome: "União e Respeito", cor: "var(--rosa)" },
 ];
 
 const QuemSomos = () => {
@@ -35,7 +35,7 @@ const QuemSomos = () => {
         <div className="container qs-sobre">
           <img
             src={FotoFuzue}
-            alt="Integrantes do Instituto Fuzuê reunidos"
+            alt="Integrantes do Instituto Fuzuê sorrindo juntos, vestidos de preto, em frente a um prédio com a faixa do Fuzuê"
             className="qs-foto"
           />
           <div>

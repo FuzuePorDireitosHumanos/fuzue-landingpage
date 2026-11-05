@@ -30,7 +30,7 @@ const opcoes = [
     subtitulo: "Doe do seu jeito",
     descricao:
       "Escolha o valor que cabe no seu bolso e faça parte dessa rede de transformação.",
-    cor: "var(--azul)",
+    cor: "var(--amarelo)",
   },
 ];
 

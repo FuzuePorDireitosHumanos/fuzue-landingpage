@@ -1,8 +1,11 @@
 .footer {
+  position: relative;
+  margin-top: calc(var(--altura-recorte) * -1);
+  padding-top: calc(48px + var(--altura-recorte));
+  padding-bottom: 48px;
   background: var(--amarelo);
   color: var(--texto);
-  padding-top: 48px;
-  padding-bottom: 48px;
+  clip-path: var(--recorte);
 }
 
 .footer-grid {

@@ -1,5 +1,10 @@
 .qd-opcoes {
-  background: var(--creme);
+  background: var(--azul);
+  color: var(--branco);
+}
+
+.qd-cartao {
+  color: var(--texto);
 }
 
 .qd-grid {

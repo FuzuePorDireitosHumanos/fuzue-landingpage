@@ -27,6 +27,22 @@
   --texto: #111111;
   --fonte-titulo: "Archivo Black", sans-serif;
   --fonte-texto: "Barlow", sans-serif;
+    --altura-recorte: 32px;
+  --recorte: polygon(
+    0 24px,
+    8% 8px,
+    17% 30px,
+    27% 4px,
+    38% 26px,
+    49% 10px,
+    60% 32px,
+    71% 6px,
+    82% 28px,
+    91% 12px,
+    100% 30px,
+    100% 100%,
+    0 100%
+  );
 }
 
 *,
@@ -113,6 +129,12 @@ a {
   width: 100%;
   padding-top: 64px;
   padding-bottom: 64px;
+}
+
+main .secao + .secao {
+  margin-top: calc(var(--altura-recorte) * -1);
+  padding-top: calc(64px + var(--altura-recorte));
+  clip-path: var(--recorte);
 }
 
 .texto {

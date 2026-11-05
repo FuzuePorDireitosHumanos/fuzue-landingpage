@@ -1,8 +1,15 @@
+import FotoCineBafafa from "../../assets/foto_cine_bafafa.jpg";
+import FotoCarnaval from "../../assets/foto_carnaval_e_democracia.jpg";
+import FotoObservatorio from "../../assets/foto_observatorio_lgbt+.jpg";
+import FotoClimaEmJogo from "../../assets/foto_clima.jpg";
+import FotoPresenca from "../../assets/foto_presenca.jpg";
 import "./styles.css";
 
 const projetos = [
   {
     id: "cine-bafafa",
+    imagem: FotoCineBafafa,
+    alt: "Pessoa de costas assiste a um filme projetado em uma tela, em uma rua à noite",
     numeros: [{ valor: "+60", legenda: "pessoas alcançadas" }],
     titulo: "Cine Bafafá",
     periodo: "07/2025 – Contínua",
@@ -16,6 +23,8 @@ const projetos = [
   },
   {
     id: "carnaval-e-democracia",
+    imagem: FotoCarnaval,
+    alt: "Pessoas conversam sentadas em roda ao redor de uma mesa com materiais de oficina, em um pátio coberto",
     numeros: [
       { valor: "+60", legenda: "trabalhadores e trabalhadoras na pesquisa" },
       { valor: "10", legenda: "jovens na rede" },
@@ -34,6 +43,8 @@ const projetos = [
   },
   {
     id: "observatorio-lgbtqia",
+    imagem: FotoObservatorio,
+    alt: "Pessoas em uma reunião de trabalho, sentadas em volta de uma mesa, com materiais de apresentação à vista",
     numeros: [
       { valor: "+10", legenda: "reuniões estratégicas" },
       { valor: "+100", legenda: "pessoas alcançadas" },
@@ -52,6 +63,8 @@ const projetos = [
   },
   {
     id: "clima-em-jogo",
+    imagem: FotoClimaEmJogo,
+    alt: "Crianças brincam em um espaço com elementos de um jogo educativo sobre clima",
     numeros: [
       { valor: "+60", legenda: "crianças mobilizadas" },
       { valor: "1", legenda: "jogo digital educativo" },
@@ -94,7 +107,16 @@ const Projetos = () => {
               className="pj-cartao"
               style={{ borderColor: projeto.cor }}
             >
-              <div className="pj-imagem">{projeto.legenda}</div>
+              {projeto.imagem ? (
+                <img
+                  src={projeto.imagem}
+                  alt={projeto.alt}
+                  className="pj-foto"
+                  style={{ objectPosition: projeto.posicaoImagem }}
+                />
+              ) : (
+                <div className="pj-imagem">{projeto.legenda}</div>
+              )}
               <div>
                 <span
                   className="pj-etiqueta"
@@ -139,7 +161,11 @@ const Projetos = () => {
 
       <section id="presenca" className="secao pj-presenca">
         <div className="container pj-presenca-grid">
-          <div className="pj-imagem">Foto da seção Presença</div>
+          <img
+            src={FotoPresenca}
+            alt="Duas pessoas seguram a bandeira do Fuzuê em frente ao painel da Conferência Regional ILGA LAC"
+            className="pj-foto"
+          />
           <div>
             <h2>Presença</h2>
             <p>
