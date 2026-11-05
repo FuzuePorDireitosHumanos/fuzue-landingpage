@@ -1,0 +1,27 @@
+.footer {
+  background: var(--amarelo);
+  color: var(--texto);
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.footer-grid a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}
