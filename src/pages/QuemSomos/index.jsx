@@ -6,15 +6,15 @@ import FotoFuzue from "../../assets/fuzue-foto.png";
 import "./styles.css";
 
 const valores = [
-  { emoji: "✊", nome: "Colaboração e Engajamento", cor: "var(--rosa)" },
-  { emoji: "🗳️", nome: "Democracia", cor: "var(--amarelo)" },
-  { emoji: "🌈", nome: "Diversidade e Inclusão", cor: "var(--azul)" },
-  { emoji: "🤝", nome: "Horizontalidade", cor: "var(--verde)" },
-  { emoji: "💡", nome: "Inovação e Melhoria Contínua", cor: "var(--laranja)" },
-  { emoji: "✊🏽", nome: "Protagonismo das Juventudes", cor: "var(--rosa)" },
-  { emoji: "🌱", nome: "Sustentabilidade", cor: "var(--verde)" },
-  { emoji: "🔎", nome: "Transparência e Rigor", cor: "var(--azul)" },
-  { emoji: "❤️", nome: "União e Respeito", cor: "var(--amarelo)" },
+  { nome: "Colaboração e Engajamento", cor: "var(--rosa)" },
+  { nome: "Democracia", cor: "var(--amarelo)" },
+  { nome: "Diversidade e Inclusão", cor: "var(--azul)" },
+  { nome: "Horizontalidade", cor: "var(--verde)" },
+  { nome: "Inovação e Melhoria Contínua", cor: "var(--laranja)" },
+  { nome: "Protagonismo das Juventudes", cor: "var(--rosa)" },
+  { nome: "Sustentabilidade", cor: "var(--verde)" },
+  { nome: "Transparência e Rigor", cor: "var(--azul)" },
+  { nome: "União e Respeito", cor: "var(--amarelo)" },
 ];
 
 const QuemSomos = () => {
@@ -31,7 +31,7 @@ const QuemSomos = () => {
         />
       </section>
 
-      <section className="secao">
+      <section className="secao qs-sobre-secao">
         <div className="container qs-sobre">
           <img
             src={FotoFuzue}
@@ -84,9 +84,6 @@ const QuemSomos = () => {
                 className="qs-valor"
                 style={{ borderTopColor: valor.cor }}
               >
-                <span className="qs-valor-emoji" aria-hidden="true">
-                  {valor.emoji}
-                </span>
                 <h3>{valor.nome}</h3>
               </li>
             ))}

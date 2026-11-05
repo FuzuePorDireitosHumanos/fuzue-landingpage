@@ -144,6 +144,17 @@
   font-size: 13px;
 }
 
+@keyframes header-dropdown-entrada {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+.header-dropdown:not([hidden]) {
+  animation: header-dropdown-entrada 180ms ease-out;
+}
+
 @media (min-width: 1200px) {
   .header-linha {
     flex-wrap: nowrap;

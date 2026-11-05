@@ -6,28 +6,28 @@ const CHAVE_PIX = "fuzuepordireitoshumanos@gmail.com";
 const opcoes = [
   {
     valor: "R$ 5",
-    subtitulo: "Fortaleça nossas ideias 💡",
+    subtitulo: "Fortaleça nossas ideias",
     descricao:
       "Ajude a produzir e compartilhar conteúdos educativos sobre direitos humanos, diversidade e justiça social.",
     cor: "var(--rosa)",
   },
   {
     valor: "R$ 15",
-    subtitulo: "Movimente nossas ações 🎨",
+    subtitulo: "Movimente nossas ações",
     descricao:
       "Contribua para a realização de atividades educativas, culturais e de mobilização comunitária.",
     cor: "var(--laranja)",
   },
   {
     valor: "R$ 50",
-    subtitulo: "Impulsione nossas iniciativas 🌱",
+    subtitulo: "Impulsione nossas iniciativas",
     descricao:
       "Ajude a fortalecer as atividades e os projetos que promovem o protagonismo das juventudes e a transformação dos territórios.",
     cor: "var(--verde)",
   },
   {
     valor: "Outro valor",
-    subtitulo: "Doe do seu jeito 💚",
+    subtitulo: "Doe do seu jeito",
     descricao:
       "Escolha o valor que cabe no seu bolso e faça parte dessa rede de transformação.",
     cor: "var(--azul)",

@@ -67,6 +67,34 @@
   margin-bottom: 0;
 }
 
+.pj-numeros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 16px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.pj-numero {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  border-left: 5px solid var(--cor);
+}
+
+.pj-numero-valor {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(30px, 4vw, 40px);
+  line-height: 1.1;
+}
+
+.pj-numero-legenda {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
 @media (min-width: 768px) {
   .pj-cartao {
     padding: 32px;

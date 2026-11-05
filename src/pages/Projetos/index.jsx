@@ -3,6 +3,7 @@ import "./styles.css";
 const projetos = [
   {
     id: "cine-bafafa",
+    numeros: [{ valor: "+60", legenda: "pessoas alcançadas" }],
     titulo: "Cine Bafafá",
     periodo: "07/2025 – Contínua",
     cor: "var(--rosa)",
@@ -15,6 +16,10 @@ const projetos = [
   },
   {
     id: "carnaval-e-democracia",
+    numeros: [
+      { valor: "+60", legenda: "trabalhadores e trabalhadoras na pesquisa" },
+      { valor: "10", legenda: "jovens na rede" },
+    ],
     titulo:
       "Carnaval é Democracia: Agenda 2030, Juventudes e o Carnaval nas Ladeiras de Olinda",
     periodo: "05/2025 – 09/2025",
@@ -29,6 +34,11 @@ const projetos = [
   },
   {
     id: "observatorio-lgbtqia",
+    numeros: [
+      { valor: "+10", legenda: "reuniões estratégicas" },
+      { valor: "+100", legenda: "pessoas alcançadas" },
+      { valor: "+50 mil", legenda: "visualizações" },
+    ],
     titulo: "Observatório LGBTQIA+ de Pernambuco",
     periodo: "05/2025 – Contínua",
     apoio: "Secretaria de Direitos Humanos de Pernambuco",
@@ -42,6 +52,10 @@ const projetos = [
   },
   {
     id: "clima-em-jogo",
+    numeros: [
+      { valor: "+60", legenda: "crianças mobilizadas" },
+      { valor: "1", legenda: "jogo digital educativo" },
+    ],
     titulo: "Clima em Jogo: Inventando Cidades Possíveis",
     periodo: "12/2025 – 05/2026",
     apoio: "Habitat para Humanidade em parceria com o GCASC",
@@ -100,6 +114,21 @@ const Projetos = () => {
                 <p>{projeto.descricao}</p>
                 <div className="pj-resultados">
                   <h3>Resultados e impacto</h3>
+                  <ul
+                    className="pj-numeros"
+                    style={{ "--cor": projeto.cor }}
+                  >
+                    {projeto.numeros.map((numero) => (
+                      <li key={numero.legenda} className="pj-numero">
+                        <strong className="pj-numero-valor">
+                          {numero.valor}
+                        </strong>
+                        <span className="pj-numero-legenda">
+                          {numero.legenda}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
                   <p>{projeto.resultados}</p>
                 </div>
               </div>

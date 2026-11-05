@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@400;500;700&display=swap");
 
 @font-face {
   font-family: "Hagrid";
@@ -25,7 +25,7 @@
   --creme: #fffaec;
   --branco: #ffffff;
   --texto: #111111;
-  --fonte-titulo: "Hagrid", sans-serif;
+  --fonte-titulo: "Archivo Black", sans-serif;
   --fonte-texto: "Barlow", sans-serif;
 }
 
@@ -47,6 +47,7 @@ body {
   line-height: 1.6;
   color: var(--texto);
   background: var(--branco);
+  font-synthesis: none;
 }
 
 #root {
@@ -134,12 +135,49 @@ a {
   cursor: pointer;
 }
 
+.botao,
+.header-botao {
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease;
+}
+
+@media (hover: hover) {
+  .botao:hover,
+  .header-botao:hover {
+    transform: translateY(-2px);
+  }
+
+  .botao:hover,
+  .header-botao:not(.ativo):hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.botao:active,
+.header-botao:active {
+  transform: translateY(1px) scale(0.98);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 [id] {
   scroll-margin-top: 90px;
+}
+
+.revelar {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 500ms ease var(--atraso, 0ms),
+    transform 500ms ease var(--atraso, 0ms);
+}
+
+.revelar.revelado {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (prefers-reduced-motion: reduce) {

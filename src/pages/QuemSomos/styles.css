@@ -3,7 +3,11 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
-  padding: 64px 24px;
+  padding: 64px 24px 16px;
+}
+
+.qs-sobre-secao {
+  padding-top: 24px;
 }
 
 .qs-topo-logo {
@@ -52,12 +56,17 @@
 }
 
 .qs-missao {
-  background: var(--azul);
+  background: var(--laranja);
   color: var(--branco);
 }
 
 .qs-valores {
-  background: var(--creme);
+  background: var(--azul);
+  color: var(--branco);
+}
+
+.qs-valor {
+  color: var(--texto);
 }
 
 .qs-valores-grid {
@@ -72,20 +81,16 @@
 .qs-valor {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
   padding: 24px;
   border-top: 8px solid;
   border-radius: 20px;
   background: var(--branco);
+  text-align: center;
 }
 
 .qs-valor h3 {
   margin: 0;
-}
-
-.qs-valor-emoji {
-  font-size: 28px;
-  line-height: 1;
 }
 
 .qs-documentos {
@@ -122,5 +127,49 @@
 
   .qs-valores-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Animação 1: formas entrando no topo */
+@keyframes qs-entrada-arco {
+  from {
+    transform: translate(-100%, -100%);
+  }
+}
+
+@keyframes qs-entrada-estrela {
+  from {
+    transform: translate(100%, -100%);
+  }
+}
+
+@keyframes qs-entrada-azul {
+  from {
+    transform: translate(100%, 100%);
+  }
+}
+
+.qs-forma-arco {
+  animation: qs-entrada-arco 700ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+.qs-forma-estrela {
+  transform-origin: top right;
+  animation:
+    qs-entrada-estrela 700ms cubic-bezier(0.22, 1, 0.36, 1) 100ms backwards,
+    qs-pulso-estrela 4s ease-in-out 800ms infinite;
+}
+
+.qs-forma-azul {
+  animation: qs-entrada-azul 700ms cubic-bezier(0.22, 1, 0.36, 1) 200ms backwards;
+}
+
+@keyframes qs-pulso-estrela {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
   }
 }
