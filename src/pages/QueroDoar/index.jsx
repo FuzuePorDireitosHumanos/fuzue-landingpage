@@ -29,7 +29,7 @@ const opcoes = [
     valor: "Outro valor",
     subtitulo: "Doe do seu jeito",
     descricao:
-      "Escolha o valor que cabe no seu bolso e faça parte dessa rede de transformação.",
+      "Escolha o valor que cabe no seu bolso e faça parte dessa rede de transformação. ",
     cor: "var(--amarelo)",
   },
 ];
