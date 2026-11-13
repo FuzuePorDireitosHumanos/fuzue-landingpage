@@ -17,7 +17,6 @@
 }
 
 :root {
-    color-scheme: only light;
   --rosa: #ea0287;
   --azul: #015cff;
   --amarelo: #f2b705;
@@ -44,6 +43,7 @@
     100% 100%,
     0 100%
   );
+  color-scheme: only light;
 }
 
 *,
