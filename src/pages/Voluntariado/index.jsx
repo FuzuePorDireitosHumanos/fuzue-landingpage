@@ -1,8 +1,9 @@
 import "./styles.css";
 
 // Troque "#" pelos links do Google Forms quando eles existirem
-const FORM_VOLUNTARIADO_URL = "#";
-const FORM_PARCERIAS_URL = "#";
+const FORM_VOLUNTARIADO_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSe1dK__es6nLl90dXaYNYXAud9bvrWJ8O4Elex7rReEX-C6cA/viewform?usp=dialog";
+const FORM_PARCERIAS_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeMheD4TBhO7jAJPbaUe6a_jwm4R6kBrHBjd-u4DncIk8Bckw/viewform?usp=dialog";
 
 const Voluntariado = () => {
   return (
@@ -23,7 +24,7 @@ const Voluntariado = () => {
       <section className="secao">
         <div className="container vp-grid">
           <div id="seja-voluntarie" className="vp-cartao vp-cartao-azul">
-            <h2>Seja voluntário(a)</h2>
+            <h2>Seja voluntárie</h2>
             <p>
               Compartilhe seus conhecimentos, habilidades, experiências e tempo
               para fortalecer nossos projetos e atividades. Você pode contribuir

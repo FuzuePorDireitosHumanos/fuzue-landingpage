@@ -6,10 +6,6 @@
   padding: 64px 24px 16px;
 }
 
-.qs-sobre-secao {
-  padding-top: 24px;
-}
-
 .qs-topo-logo {
   position: relative;
   z-index: 1;
@@ -40,18 +36,6 @@
   bottom: 0;
   right: 0;
   width: 180px;
-}
-
-.qs-sobre {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  align-items: center;
-}
-
-.qs-foto {
-  width: 100%;
-  border-radius: 20px;
 }
 
 .qs-missao {
@@ -119,11 +103,6 @@
 }
 
 @media (min-width: 900px) {
-  .qs-sobre {
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-  }
-
   .qs-valores-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -170,5 +149,29 @@
   }
   50% {
     transform: scale(1.08);
+  }
+}
+
+/* Quem somos: foto ao lado do texto */
+.qs-sobre-secao {
+  padding-top: 24px;
+}
+
+.qs-sobre {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.qs-foto {
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media (min-width: 900px) {
+  .qs-sobre {
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
   }
 }
