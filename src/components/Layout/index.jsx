@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const SELETOR_REVELAR = [
   ".secao > .container > *:not(.qs-valores-grid):not(.qd-grid)",
@@ -62,6 +63,7 @@ const Layout = () => {
         <Outlet />
       </main>
       <Footer />
+      <Analytics />
     </>
   );
 };
