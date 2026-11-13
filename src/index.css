@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@400;500;700&display=swap");
 
 @font-face {
   font-family: "Hagrid";
   src: url("./assets/fonts/Hagrid-Regular-trial.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,39 +13,200 @@
   src: url("./assets/fonts/Hagrid-Text-Extrabold-trial.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #015CFF #fff;
+:root {
+  --rosa: #ea0287;
+  --azul: #015cff;
+  --amarelo: #f2b705;
+  --verde: #33b433;
+  --laranja: #fd4f14;
+  --creme: #fffaec;
+  --branco: #ffffff;
+  --texto: #111111;
+  --fonte-titulo: "Archivo Black", sans-serif;
+  --fonte-texto: "Barlow", sans-serif;
+    --altura-recorte: 32px;
+  --recorte: polygon(
+    0 24px,
+    8% 8px,
+    17% 30px,
+    27% 4px,
+    38% 26px,
+    49% 10px,
+    60% 32px,
+    71% 6px,
+    82% 28px,
+    91% 12px,
+    100% 30px,
+    100% 100%,
+    0 100%
+  );
+  color-scheme: only light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Barlow", sans-serif;
+  font-family: var(--fonte-texto);
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--texto);
+  background: var(--branco);
+  font-synthesis: none;
 }
 
-h1 {
-  font-family: "Hagrid", sans-serif;
-  font-size: 40px;
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-p {
-  /* font-size: 21px; */
-  font-size: 135%;
-  color: #fff;
-}
-
-span {
-  font-family: "Barlow", sans-serif;
-}
-
-body, html, #root {
-  overflow-x: hidden;
+main {
+  flex: 1;
 }
 
 img {
-  user-select: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+  font-weight: bold;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+
+h1 {
+  font-size: clamp(32px, 5vw, 52px);
+}
+
+h2 {
+  font-size: clamp(26px, 4vw, 38px);
+}
+
+h3 {
+  font-size: clamp(20px, 2.5vw, 24px);
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--texto);
+  outline-offset: 3px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.secao {
+  position: relative;
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+main .secao + .secao {
+  margin-top: calc(var(--altura-recorte) * -1);
+  padding-top: calc(64px + var(--altura-recorte));
+  clip-path: var(--recorte);
+}
+
+.texto {
+  max-width: 760px;
+}
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 999px;
+  font-family: var(--fonte-titulo);
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao,
+.header-botao {
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease;
+}
+
+@media (hover: hover) {
+  .botao:hover,
+  .header-botao:hover {
+    transform: translateY(-2px);
+  }
+
+  .botao:hover,
+  .header-botao:not(.ativo):hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.botao:active,
+.header-botao:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 90px;
+}
+
+.revelar {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 500ms ease var(--atraso, 0ms),
+    transform 500ms ease var(--atraso, 0ms);
+}
+
+.revelar.revelado {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }

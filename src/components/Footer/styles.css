@@ -1,0 +1,30 @@
+.footer {
+  position: relative;
+  margin-top: calc(var(--altura-recorte) * -1);
+  padding-top: calc(48px + var(--altura-recorte));
+  padding-bottom: 48px;
+  background: var(--amarelo);
+  color: var(--texto);
+  clip-path: var(--recorte);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.footer-grid a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}

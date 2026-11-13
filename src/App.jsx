@@ -1,57 +1,22 @@
-import { useRef } from "react";
-import Button from "./components/Buttons";
-import SobreSection from "./components/Sobre";
-import EixosSection from "./components/EixosSection";
-import ContatosSection from "./components/ContatosSection";
-import "./App.css";
-import FuzueLogo from "./assets/fuzue-logo.png";
-import FirstFigure from "./assets/ê.png";
-import SecondFigure from "./assets/Star.png";
-import ThirdFigure from "./assets/u.png";
-import SlideProjetos from "./components/SlideProjetos";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import QuemSomos from "./pages/QuemSomos";
+import Projetos from "./pages/Projetos";
+import Transparencia from "./pages/Transparencia";
+import QueroDoar from "./pages/QueroDoar";
+import Voluntariado from "./pages/Voluntariado";
 
 function App() {
-  const aboutSection = useRef(null);
-  const eixosSection = useRef(null);
-  const contatosSection = useRef(null);
-
   return (
-    <div>
-      <header>
-        <img src={FirstFigure} className="first-figure" alt="figura-e" />
-        <img src={SecondFigure} className="second-figure" alt="figura-estrela" />
-        <img src={ThirdFigure} className="third-figure" alt="figura-u" />
-
-        <img src={FuzueLogo} alt="logo-fuzue" />
-        <div className="buttons">
-          <Button
-            text="QUEM SOMOS"
-            sectionTarget={aboutSection}
-            bgcolor="#EA0287"
-          />
-          <Button text="EIXOS" sectionTarget={eixosSection} bgcolor="#015CFF" />
-          <Button
-            text="CONTATOS"
-            sectionTarget={contatosSection}
-            bgcolor="#F2B705"
-          />
-        </div>
-      </header>
-      <div className="sections">
-        <section ref={aboutSection} className="sobre">
-          <SobreSection />
-        </section>
-        <section ref={eixosSection} className="eixos">
-          <EixosSection />
-        </section>
-        <section className="projetos">
-          <SlideProjetos />
-        </section>
-        <section ref={contatosSection} className="contatos">
-          <ContatosSection />
-        </section>
-      </div>
-    </div>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<QuemSomos />} />
+        <Route path="/projetos" element={<Projetos />} />
+        <Route path="/transparencia" element={<Transparencia />} />
+        <Route path="/quero-doar" element={<QueroDoar />} />
+        <Route path="/voluntariado-e-parcerias" element={<Voluntariado />} />
+      </Route>
+    </Routes>
   );
 }
 
